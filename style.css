@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8A51FC;
+    
+}
+
+.logo {
+    width: 300px;
+    display: block; /* display block, a linha toda é dele, daí sim, conseguimos centralizar a imagem */
+    /* por padrão no html imagem vem sempre como display inline, esse permite que todos fiquem na mesma linha. */
+    margin: 20px auto; /* ele está com 20px em cima e embaixo e dos lados automático, quando dos dois
+    lados estão automáticos ele centraliza o elemento. */
+}
+
+/* por padrão DIV, MAIN e SECTION já vem como display block */
+main {  /* está envolvendo todos os labels, divs e sections */
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px; /* 1 - cima /2* -lados /3* -embaixo */
+    
+    /*
+    padding: 44px; ele aplica para os 4 lados;
+    padding: 44px 24px; 1) - cima e embaixo /2) dos dois lados;
+    padding: 44px 24px 23px; /* 1) - cima /2) -lados /3) -embaixo; 
+    padding: 44px 24px 23px 22px; /* 1) - cima /2) -lado direito /3) -embaixo /4) lado esquerdo;
+    */
+
+
+}
+
+label {
+    color: #777777;
+    font-family: 400;
+    font-size: 14px;
+}
+
+select, input { /* aplicou as mesmas configurações para o select e para o input */
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%; /* ele ocupa 100% do espaço disponivel, mas ele não vaza pq o padding segura ele. */
+    margin-bottom: 24px;
+    appearance: none; /* seta que fica na caixa de seleção, para selecionar os itens */
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #a1a0a0;
+
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px; /* desgrudou na parte de cima 36px do botão */
+    padding: 12px; /* ele criou uma borda interna de 12px das paredes da section */
+
+    display: flex; /* ele dá super poderes, e coloca todos os intens um do lado do outro*/
+    flex-direction: column; /* com o poder ativado de flex eu consigo colocar a direção que eu quero, no caso tudo em colunas */
+    align-items: center; /* ainda com o poder eu centralizo todos esses intens */
+}
+
+/*.img-currency-convert, .img-currency {
+    box-shadow: 5px 5px 5px #a1a0a0;
+}*/
+
+.arrow-img {
+    margin: 15px; /* ela vai disntaciar 15 px em cima e embaixo das divs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* ele é um dispositivo que coloca uma margem entre todos os intens */
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+
+}
+
+.currency-value, .currency-value-to-convert { /* aqui ele aplicou o mesmo CSS em duas classes
+                                               distintas, mas que possuem a mesma roupagem. */
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+
+}
